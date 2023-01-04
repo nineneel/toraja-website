@@ -1,0 +1,50 @@
+/* width */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    border-radius: 10px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #513d2a;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #7c6045;
+}
+
+.burger__icon__pressed span:nth-child(1) {
+    transform: translateY(10px) rotate(40deg) scaleX(1.2);
+}
+
+.burger__icon__pressed span:nth-child(3) {
+    transform: translateY(-10px) rotate(-40deg) scaleX(1.2);
+}
+
+.burger__icon__pressed span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger__icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger__icon span:nth-child(3) span:nth-child(1) {
+    transform: translateY(0) rotate(0) scaleX(1);
+}
+
+.burger__icon span:nth-child(2) {
+    opacity: 1;
+}
+.menu {
+    transform: translateY(40px);
+    opacity: 0;
+    display: none;
+}
